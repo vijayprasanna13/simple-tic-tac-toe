@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import TicTacToe from "./TicTacToe";
 import { ToastContainer, toast } from 'react-toastify';
@@ -37,7 +37,7 @@ function App() {
       <ToastContainer />
 
       <div style={{ display: 'flex', justifyContent: 'center', padding: '1%' }}>
-        <section aria-labe="Input for the game">
+        <section aria-label="Input for the game">
           {/* <input type="number" value={inputValue} onChange={onInputValueChange}></input> */}
 
           <Form inline>

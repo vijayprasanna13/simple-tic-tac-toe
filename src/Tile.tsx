@@ -21,7 +21,7 @@ const Tile: React.FC<Props> = ({ value, id, markTile }) => {
   }
 
   const handleClick = (e: React.MouseEvent) => {
-    if (value == Players.Default)
+    if (value === Players.Default)
       markTile(id)
   }
   return (

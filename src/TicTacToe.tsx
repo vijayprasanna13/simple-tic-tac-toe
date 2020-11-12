@@ -36,10 +36,10 @@ const TicTacToe:React.FC<Props> = ({n, notify, restart}) => {
     let {v, h, d, ad} = {v: true, h: true, d: true, ad: true}
     for (let i= 0; i < n; i++) {
       for (let j = 0; j < n; j++){
-        if (j === id.j && grid[i][j] != playerState) h = false
-        if (i === id.i && grid[i][j] != playerState) v = false
-        if (i === j && grid[i][j] != playerState) d = false
-        if (i+j === n-1 && grid[i][j] != playerState) ad = false
+        if (j === id.j && grid[i][j] !== playerState) h = false
+        if (i === id.i && grid[i][j] !== playerState) v = false
+        if (i === j && grid[i][j] !== playerState) d = false
+        if (i+j === n-1 && grid[i][j] !== playerState) ad = false
       }
     }
 
